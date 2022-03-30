@@ -1,0 +1,146 @@
+2022-03-30 17:54:16.572523
+	1e3
+		1e3_0.txt
+			brute force:                    0.7184996604919434
+			brute force with imporvement:   0.043959856033325195
+			dynamic programming:            0.0004277229309082031
+				consistent result
+		1e3_2.txt
+			brute force:                    0.9197404384613037
+			brute force with imporvement:   0.04524064064025879
+			dynamic programming:            0.00040841102600097656
+				consistent result
+		1e3_1.txt
+			brute force:                    0.5316784381866455
+			brute force with imporvement:   0.04385733604431152
+			dynamic programming:            0.00041484832763671875
+				consistent result
+		1e3_3.txt
+			brute force:                    0.7859394550323486
+			brute force with imporvement:   0.04616713523864746
+			dynamic programming:            0.0004544258117675781
+				consistent result
+	1e4
+		1e4_2.txt
+			brute force:                    10
+			brute force with imporvement:   4.4006507396698
+			dynamic programming:            0.003815174102783203
+		1e4_0.txt
+			brute force:                    10
+			brute force with imporvement:   4.3664000034332275
+			dynamic programming:            0.003972291946411133
+		1e4_3.txt
+			brute force:                    10
+			brute force with imporvement:   4.360981702804565
+			dynamic programming:            0.0039098262786865234
+		1e4_1.txt
+			brute force:                    10
+			brute force with imporvement:   4.336305141448975
+			dynamic programming:            0.003809690475463867
+	1e5
+		1e5_3.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03805184364318848
+		1e5_2.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.037514686584472656
+		1e5_0.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03734922409057617
+		1e5_1.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03736376762390137
+	1e6
+		1e6_2.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.3875854015350342
+		1e6_0.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.4047732353210449
+		1e6_3.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.3937091827392578
+		1e6_1.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.3829953670501709
+2022-03-30 18:12:06.335647
+	1e3
+		1e3_0.txt
+			brute force:                    0.7325491905212402
+			brute force with imporvement:   0.043866634368896484
+			dynamic programming:            0.00040268898010253906
+				consistent result
+		1e3_2.txt
+			brute force:                    0.9444365501403809
+			brute force with imporvement:   0.04439139366149902
+			dynamic programming:            0.0003981590270996094
+				consistent result
+		1e3_1.txt
+			brute force:                    0.5355038642883301
+			brute force with imporvement:   0.04499030113220215
+			dynamic programming:            0.0004031658172607422
+				consistent result
+		1e3_3.txt
+			brute force:                    0.7977614402770996
+			brute force with imporvement:   0.04419064521789551
+			dynamic programming:            0.0003819465637207031
+				consistent result
+	1e4
+		1e4_2.txt
+			brute force:                    10
+			brute force with imporvement:   4.396985292434692
+			dynamic programming:            0.003333568572998047
+		1e4_0.txt
+			brute force:                    10
+			brute force with imporvement:   4.355045318603516
+			dynamic programming:            0.003270387649536133
+		1e4_3.txt
+			brute force:                    10
+			brute force with imporvement:   4.469576597213745
+			dynamic programming:            0.003200054168701172
+		1e4_1.txt
+			brute force:                    10
+			brute force with imporvement:   4.387884855270386
+			dynamic programming:            0.003153085708618164
+	1e5
+		1e5_3.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03286409378051758
+		1e5_2.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03626656532287598
+		1e5_0.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.0329892635345459
+		1e5_1.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.03364443778991699
+	1e6
+		1e6_2.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.3165700435638428
+		1e6_0.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.31441569328308105
+		1e6_3.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.31138157844543457
+		1e6_1.txt
+			brute force:                    10
+			brute force with imporvement:   10
+			dynamic programming:            0.30528831481933594

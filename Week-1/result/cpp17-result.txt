@@ -1,0 +1,146 @@
+Wed Mar 30 17:56:56 2022
+
+Compiled with g++ -stdc++2a
+	1e3
+		1e3_0.txt
+			brute force:                    0.278284
+			brute force with improvement:   0.054974
+			dynamic programming:            0.000114
+				consistent result
+		1e3_1.txt
+			brute force:                    0.283915
+			brute force with improvement:   0.056802
+			dynamic programming:            0.000117
+				consistent result
+		1e3_2.txt
+			brute force:                    0.277691
+			brute force with improvement:   0.055241
+			dynamic programming:            0.000116
+				consistent result
+		1e3_3.txt
+			brute force:                    0.277821
+			brute force with improvement:   0.055205
+			dynamic programming:            0.000112
+				consistent result
+	1e4
+		1e4_0.txt
+			brute force:                    10
+			brute force with improvement:   5.54035
+			dynamic programming:            0.001196
+		1e4_1.txt
+			brute force:                    10
+			brute force with improvement:   5.55556
+			dynamic programming:            0.001128
+		1e4_2.txt
+			brute force:                    10
+			brute force with improvement:   5.561
+			dynamic programming:            0.001129
+		1e4_3.txt
+			brute force:                    10
+			brute force with improvement:   5.52454
+			dynamic programming:            0.001099
+	1e5
+		1e5_0.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.011232
+		1e5_1.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.010981
+		1e5_2.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.010955
+		1e5_3.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.010959
+	1e6
+		1e6_0.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.111098
+		1e6_1.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.110545
+		1e6_2.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.110099
+		1e6_3.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.110042
+
+Wed Mar 30 18:12:03 2022
+	Compiled with g++ -stdc++2a
+	1e3
+		1e3_0.txt
+			brute force:                    0.284591
+			brute force with improvement:   0.053941
+			dynamic programming:            7e-06
+		1e3_1.txt
+			brute force:                    0.2757
+			brute force with improvement:   0.055538
+			dynamic programming:            4e-06
+		1e3_2.txt
+			brute force:                    0.278389
+			brute force with improvement:   0.056407
+			dynamic programming:            4e-06
+		1e3_3.txt
+			brute force:                    0.278274
+			brute force with improvement:   0.056445
+			dynamic programming:            4e-06
+	1e4
+		1e4_0.txt
+			brute force:                    10
+			brute force with improvement:   5.59667
+			dynamic programming:            4.5e-05
+		1e4_1.txt
+			brute force:                    10
+			brute force with improvement:   5.5096
+			dynamic programming:            3.1e-05
+		1e4_2.txt
+			brute force:                    10
+			brute force with improvement:   5.57994
+			dynamic programming:            3.2e-05
+		1e4_3.txt
+			brute force:                    10
+			brute force with improvement:   5.52508
+			dynamic programming:            3.3e-05
+	1e5
+		1e5_0.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.000419
+		1e5_1.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.000296
+		1e5_2.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.000296
+		1e5_3.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.000291
+	1e6
+		1e6_0.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.004509
+		1e6_1.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.002959
+		1e6_2.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.002952
+		1e6_3.txt
+			brute force:                    10
+			brute force with improvement:   10
+			dynamic programming:            0.00293
