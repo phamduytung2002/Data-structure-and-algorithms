@@ -10,7 +10,6 @@ def gen(size, fileName):
         for _ in range(size-1):
             f.write(' ' + str(random.randint(-MAX_ABS, MAX_ABS)))
 
-os.makedirs('Week-1/testCases', exist_ok=True)
 for i in range(4):
     gen(1000, f'1e3_{i}.txt')
     gen(10000, f'1e4_{i}.txt')

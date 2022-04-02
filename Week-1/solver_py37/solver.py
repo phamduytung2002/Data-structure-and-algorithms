@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 import os
 
-TIME_LIMIT = 10
+TIME_LIMIT = 60
 
 def bruteForce(listOfNumbers):
     print('Running brute force\n')
@@ -32,8 +32,8 @@ def bruteForceWithImprovement(listOfNumbers):
             sum += listOfNumbers[j]
             if sum > res:
                 res = sum
-            if time.time() > startTime + TIME_LIMIT:
-                return (TIME_LIMIT, res)
+        if time.time() > startTime + TIME_LIMIT:
+            return (TIME_LIMIT, res)
     return (time.time() - startTime, res)
 
 def dynamicProgramming(listOfNumbers):
@@ -56,6 +56,7 @@ if __name__ == "__main__":
 
     with open(resultFile, 'a') as f:
         f.write(f'{datetime.now()}\n')
+        f.write(f'TIME_LIMIT: {TIME_LIMIT}\n')
     
     for logSize in range(3,7):
         with open(resultFile, 'a') as f:
@@ -73,8 +74,14 @@ if __name__ == "__main__":
                 bfiRes = bruteForceWithImprovement(testCase)
                 dpRes = dynamicProgramming(testCase)
                 with open(resultFile, 'a') as f:
-                    f.write(f"\t\t\tbrute force:                    {bfRes[0]}\n")
-                    f.write(f"\t\t\tbrute force with imporvement:   {bfiRes[0]}\n")
+                    if bfRes[0]==TIME_LIMIT:
+                        f.write(f"\t\t\tbrute force:                    TIME_LIMIT\n")
+                    else:
+                        f.write(f"\t\t\tbrute force:                    {bfRes[0]}\n")
+                    if bfiRes[0]==TIME_LIMIT:
+                        f.write(f"\t\t\tbrute force with improvement:   TIME_LIMIT\n")
+                    else:
+                        f.write(f"\t\t\tbrute force with improvement:   {bfiRes[0]}\n")
                     f.write(f"\t\t\tdynamic programming:            {dpRes[0]}\n")
                     if bfRes[1]==bfiRes[1] and bfRes[1]==dpRes[1]:
                         f.write(f"\t\t\t\tconsistent result\n")
