@@ -1,0 +1,11 @@
+Case: n = 20, k = 10
+	Recursion with memory running time: 0
+	Recursion running time: 0.001
+Case: n = 35, k = 20
+	Recursion with memory running time: 0
+	Recursion running time: 16.461
+Case: n = 40, k = 20
+	Recursion with memory running time: 0
+	Recursion running time: 696.391
+Case: n = 50, k = 30
+	Recursion with memory running time: 0
