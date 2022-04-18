@@ -4,7 +4,7 @@ using namespace std;
 typedef long long ll;
 string path = "Week-3/results.txt";
 const int maxn = 55;
-    ll D[maxn][maxn] = {0};
+ll D[maxn][maxn] = {0};
 
 ll recursion_C(int n, int k) {
     if (k == 0 || n == k)
@@ -15,7 +15,7 @@ ll recursion_C(int n, int k) {
 }
 
 ll recursion_with_memory_C(int n, int k) {
-    for( int i=0; i<=n ;++i ){
+    for (int i = 0; i <= n; ++i) {
         D[i][0] = 1;
         D[i][i] = 1;
     }
@@ -26,8 +26,8 @@ ll recursion_with_memory_C(int n, int k) {
 }
 
 double runningTime(function<ll(int, int)> func, int n, int k) {
-    for( int i=0; i<n; ++i ){
-        for( int j=0; j<n; ++j ){
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
             D[i][j] = 0;
         }
     }
