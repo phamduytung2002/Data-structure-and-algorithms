@@ -1,3 +1,7 @@
+/*
+    print all binary strings of length n
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

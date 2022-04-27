@@ -1,3 +1,7 @@
+/*
+    print all m element subsets of {1, 2, ..., n}
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

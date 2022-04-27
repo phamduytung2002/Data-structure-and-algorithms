@@ -1,3 +1,7 @@
+/*
+    determine if exist a subset with given sum
+*/
+
 #include <iostream>
 using namespace std;
 

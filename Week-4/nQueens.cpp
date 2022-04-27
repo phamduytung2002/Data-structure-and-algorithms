@@ -1,3 +1,7 @@
+/*
+    print all solutions of n-queens puzzle
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
