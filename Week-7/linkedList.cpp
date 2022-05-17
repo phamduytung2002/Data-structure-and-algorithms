@@ -20,7 +20,6 @@ void print(node *head) {
     }
 }
 
-
 void insertToHead(node **head, int x) {
     node *newNode = makeNode(x);
     newNode->next = *head;
@@ -34,16 +33,16 @@ node *insertToHead(node *head, int x) {
     return head;
 }
 
-void insertAfter(node *cur, int x){
+void insertAfter(node *cur, int x) {
     node *newNode = makeNode(x);
     newNode->next = cur->next;
     cur->next = newNode;
 }
 
-int countNode(node *head, int v){
-    int ans=0;
-    while(head!=NULL){
-        if(head->value == v) ans++;
+int countNode(node *head, int v) {
+    int ans = 0;
+    while (head != NULL) {
+        if (head->value == v) ans++;
         head = head->next;
     }
     return ans;
@@ -58,5 +57,5 @@ int main() {
         insertToHead(head, val);
     }
     print(head);
-    cout<<countNode(head, 5);
+    cout << countNode(head, 5);
 }

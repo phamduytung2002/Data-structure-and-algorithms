@@ -31,5 +31,5 @@ void Try(int k) {
 int main() {
     cin >> n >> N;
     Try(0);
-    cout<<"Number of solutions: "<<cnt<<endl;
+    cout << "Number of solutions: " << cnt << endl;
 }
