@@ -13,7 +13,7 @@ string trim(string s) {
 
 string takeBeforeSpaceAndRemove(string &input) {
     // input = "    A       B.......     "
-    // -> return A, input := B
+    // -> return A, input := B.......
     string A;
     input = trim(input);
     size_t found = input.find(" ");
@@ -30,20 +30,17 @@ string takeBeforeSpaceAndRemove(string &input) {
 }
 
 bool isNum(string c) {
+    // check if a string c is a number
     for (int i = 0; i < c.size(); ++i)
         if (c[i] != '.' && (c[i] < '0' || c[i] > '9')) return false;
     return true;
 }
 
 bool isOperator(string c) {
-    if (c.size() > 1)
+    if (c == "+" || c == "-" || c == "*" || c == "/" || c == "^")
+        return true;
+    else
         return false;
-    else {
-        if (c == "+" || c == "-" || c == "*" || c == "/" || c == "^")
-            return true;
-        else
-            return false;
-    }
 }
 
 double stringToDouble(string c) {
@@ -52,6 +49,7 @@ double stringToDouble(string c) {
 }
 
 int priority(char c) {
+    // return the priority of an (operator or bracket) c
     if (c == '^')
         return 3;
     else if (c == '*' || c == '/')
@@ -63,6 +61,7 @@ int priority(char c) {
 }
 
 void process() {
+    // process top 2 elements in num stack with top element in operators stack
     double a = num.top();
     num.pop();
     double b = num.top();
@@ -81,19 +80,9 @@ void process() {
         num.push(pow(b, a));
 }
 
-bool charIsNum(char c) {
-    return (c >= '0' && c <= '9');
-}
-
 int main() {
     string input;
     getline(cin, input);
-    for (int i = 1; i < input.size(); ++i) {
-        if (!charIsNum(input[i]) || !charIsNum(input[i - 1])) {
-            input = input.substr(0, i) + " " + input.substr(i, input.size());
-            ++i;
-        } 
-    }
     input = trim(input);
     while (input != "") {
         string c = takeBeforeSpaceAndRemove(input);
