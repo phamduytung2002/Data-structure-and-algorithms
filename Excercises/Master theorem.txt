@@ -1,0 +1,9 @@
+Simplified Master Theorem
+
+a>=1, b>=2, c>0
+T(n) = a T(n/b) + f(n)
+f(n) = \Theta(n^k)
+
+i.   a>b^k: T(n) = \Theta(n^{log_b a})
+ii.  a=b^k: T(n) = \Theta(n^k log n)
+iii. a<b^k: T(n) = \Theta(n^k)
