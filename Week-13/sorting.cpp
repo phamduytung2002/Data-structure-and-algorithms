@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int maxn = 10000;
+const int maxn = 10005;
 int arr[maxn], n;
 
 void insertionSort() {
@@ -104,12 +104,12 @@ void quickSortt() {
 }
 
 void maxHeapify(int i, int n) {  // 0-based index
-    arr[10001] = INT_MIN;
+    arr[maxn - 1] = INT_MIN;
     if (i >= n / 2) return;
     int left = 2 * i + 1;
     int right = 2 * i + 2;
-    if (left >= n) left = 10001;
-    if (right >= n) right = 10001;
+    if (left >= n) left = maxn - 1;
+    if (right >= n) right = maxn - 1;
     int idMax, Max;
     if (arr[left] > arr[right]) {
         idMax = left;
@@ -168,10 +168,10 @@ int main() {
     srand(time(NULL));
     n = 2000;
     int N = 1000;
-    // if (testNTimes(N, insertionSort)) cout << "Insertion sort is correct\n";
-    // if (testNTimes(N, selectionSort)) cout << "Selection Sort is correct\n";
-    // if (testNTimes(N, bubbleSort)) cout << "Bubble sort is correct\n";
-    // if (testNTimes(N, mergeSortt)) cout << "Merge sort is correct\n";
-    // if (testNTimes(N, quickSortt)) cout << "Quick sort is correct\n";
+    if (testNTimes(N, insertionSort)) cout << "Insertion sort is correct\n";
+    if (testNTimes(N, selectionSort)) cout << "Selection Sort is correct\n";
+    if (testNTimes(N, bubbleSort)) cout << "Bubble sort is correct\n";
+    if (testNTimes(N, mergeSortt)) cout << "Merge sort is correct\n";
+    if (testNTimes(N, quickSortt)) cout << "Quick sort is correct\n";
     if (testNTimes(N, heapSort)) cout << "Heap sort is correct\n";
 }
